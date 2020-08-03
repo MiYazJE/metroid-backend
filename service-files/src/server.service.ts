@@ -5,6 +5,9 @@ import compression from "compression";
 import bodyParser from "body-parser";
 import cors from "cors";
 
+// Rutas
+import FilesRoutes from "./routes/Files.routes";
+
 export class Server{
   private app: express.Application
 
@@ -29,7 +32,7 @@ export class Server{
   }
 
   private routes(): void {
-
+    this.app.use("/api/v1/files", FilesRoutes);
   }
 
   public start(): void {
