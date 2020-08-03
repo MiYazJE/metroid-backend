@@ -1,0 +1,40 @@
+{
+  "name": "service-auth-metroid",
+  "version": "1.0.0",
+  "description": "Servicio de autenticacion para la aplicacion metroid",
+  "main": "service/index.service.js",
+  "scripts": {
+    "start": "node service/index.service.js",
+    "build": "tsc",
+    "dev": "nodemon -e ts --exec \"npm run build && npm start \""
+  },
+  "repository": "https://github.com/Ezequiel-Vega/metroid-backend.git",
+  "author": "Ezequiel Vega<vegaezequiel51@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/compression": "^1.7.0",
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "@types/hapi__joi": "^17.1.4",
+    "@types/helmet": "^0.0.47",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mongoose": "^5.7.34",
+    "@types/morgan": "^1.9.1",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.7"
+  }
+}
